@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- TAILWIND CSS CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class=" bg-purple-300 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+        <img id="menuicon" class="md:hidden" width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/menu--v3.png" alt="menu--v3"/>
+
+        <ul class="flex gap-5 text-gray-700 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+     </nav>
+
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-purple-300 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+     </section>
+
+
+
+    <!-- Contact -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-900 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-black text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-black shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-black focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="items-center py-3 px-5 text-sm bg-black text-white font-medium  rounded-lg sm:w-fit hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-slate-500 dark:focus:ring-slate-800">Send message</button>
+            </form>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <section class="bg-purple-300 p-10 flex flex-col gap-5 mt-5">
+        <h2 class="text-4xl font-bold">Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+        <div class="flex">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new"/>
+            <img width="30" height="30" src="https://img.icons8.com/material-outlined/30/twitterx--v2.png" alt="twitterx--v2"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/pinterest--v1.png" alt="pinterest--v1"/>
+            <img width="30" height="30" src="https://img.icons8.com/material-outlined/30/instagram-new--v1.png" alt="instagram-new--v1"/>
+        </div>
+
+        <p>@2021 nostra.com</p>
+     </section>
+
+     <script src="index.js"></script>
+
+</body>
+</html>

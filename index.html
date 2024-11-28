@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- TAILWIND CSS CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- link style.css -->
+     <link rel="stylesheet" href="style.css">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    
+</head>
+
+<body>
+
+     <!--Offer Bar-->
+
+     <div class="offer-bar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+        <i id="offer-close"  style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+
+    <!-- Responsive Navbar -->
+     <nav class=" bg-purple-300 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+        <img id="menuicon" class="md:hidden" width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/menu--v3.png" alt="menu--v3"/>
+
+        <ul class="flex gap-5 text-gray-700 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="">Home</a>
+            </li>
+            <li>
+                <p id="swipearrival" class="hover:underline hover:text-black cursor-pointer" href="">New Arrival</p>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+     </nav>
+
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-purple-300 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+     </section>
+
+    <!-- Major image section -->
+    <div class="relative" id="imgcontainer">
+        <img src="./Images/major img 1.jpeg" alt="" style="width: 100%; height: 450px; margin-top: 10px;">
+        
+        <div class="absolute top-20 m-5 text-center" style="width: auto; margin-left: 20%; margin-right: 20%;">
+            
+            <h1 class="font-bold text-4xl md:text-6xl text-white" >Level up Your Style With Our</h1>
+            <h3 class="text-2xl text-white mt-2">Summer Collections</h3>
+            <a href="collections.html"><button class="p-2 rounded-xl bg-white font-bold mt-5 hover:bg-gray-700 hover:text-white">Shop Now</button></a>
+        </div>
+            <!-- Arrow key -->
+             <!-- <div class="absolute top-40 right-2 cursor-pointer">
+                <a onclick="click()" class="btnarrow btn-right"><i class="fa-sharp-duotone fa-solid fa-arrow-right fa-2xl"></i></a>
+            </div>
+            <div class="absolute top-40 left-2 cursor-pointer">
+                <a class="btnarrow btn-left"><i class="fa-sharp-duotone fa-solid fa-arrow-left fa-2xl" style="--fa-primary-color: #fcfcfd; --fa-secondary-color: #fcfcfd;"></i></a>
+            </div> -->
+    </div>
+
+    <!-- Brands list -->
+     <div>
+        <h1 class="font-bold text-4xl p-5 mt-5">Top Brands</h1>
+
+        <div class="flex justify-between ml-5 mr-5 text-center mt-3">
+            <div>
+                <h2>Adidas</h2>
+                <img width="50" height="50" src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/50/external-adidas-a-multinational-corporation-that-designs-and-manufactures-shoes-clothing-and-accessories-fashion-light-tal-revivo.png" alt="external-adidas-a-multinational-corporation-that-designs-and-manufactures-shoes-clothing-and-accessories-fashion-light-tal-revivo"/>
+            </div>
+            <div>
+                <h2>Nike</h2>
+                <img width="50" height="50" src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/50/external-nike-an-american-multinational-corporation-footwear-apparel-equipment-accessories-and-services-fashion-light-tal-revivo.png" alt="external-nike-an-american-multinational-corporation-footwear-apparel-equipment-accessories-and-services-fashion-light-tal-revivo"/>
+            </div>
+            <div>
+                <h2>Gucci</h2>
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/gucci.png" alt="gucci"/>
+            </div>
+            <div>
+                <h2>Zara</h2>
+                <img width="50" height="50" src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/50/external-zara-a-spanish-fast-fashion-and-the-worlds-largest-apparel-retailer-fashion-light-tal-revivo.png" alt="external-zara-a-spanish-fast-fashion-and-the-worlds-largest-apparel-retailer-fashion-light-tal-revivo"/>
+            </div>
+            <div>
+                <h2>Raymond</h2>
+                <img class="pl-2 ml-1" width="48" height="48" src="https://img.icons8.com/doodle/100/raymond.png" alt="raymond"/>
+            </div>
+            <div>
+                <h2>Calvin Klein</h2>
+                <img class="pl-2 ml-3" width="45" height="45" src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/50/external-calvin-klein-an-american-luxury-fashion-specializes-in-leather-lifestyle-accessories-perfumery-jewellery-watches-and-ready-to-wear-fashion-light-tal-revivo.png" alt="external-calvin-klein-an-american-luxury-fashion-specializes-in-leather-lifestyle-accessories-perfumery-jewellery-watches-and-ready-to-wear-fashion-light-tal-revivo"/>
+            </div>
+            
+        </div>
+     </div>
+
+    <!-- Specifications -->
+     <div class="flex justify-between items-center mt-10 ml-5 mr-5">
+        <div class="font-bold text-xl">
+            <h2>We provide Best</h2>
+            <h2>Customer Experiences</h2>
+        </div>
+        <div>
+            ||We ensure that our Customer have the best shopping experience
+        </div>
+     </div>
+
+     <div class="flex text-xs md:text-lg m-2">
+        <div class="bg-purple-300 w-80 rounded-2xl m-1 md:m-5">
+            <img class="p-2" width="60" height="60" src="https://img.icons8.com/ios-filled/100/checked.png" alt="checked"/>
+            <h1 class="font-bold pt-5 text-center">Original Products</h1>
+            <p class="p-5">Sure! Could you specify what kind of product you're looking to describe? Is ita piece of clothing.</p>
+        </div>
+        <div class="bg-purple-300 w-80 rounded-2xl m-1 md:m-5">
+            <img class="p-2" width="60" height="60" src="https://img.icons8.com/ios-filled/60/happy.png" alt="happy"/>
+            <h1 class="font-bold pt-5 text-center">Satisfaction Guarantee</h1>
+            <p class="p-5">A Satisfaction Guarantee is a promise made by a business to its customers, ensuring that the products.</p>
+        </div>
+        <div class="bg-purple-300 w-80 rounded-2xl m-1 md:m-5">
+            <img class="p-2" width="60" height="60" src="https://img.icons8.com/ios-filled/60/new.png" alt="new"/>
+            <h1 class="font-bold pt-5 text-center">New Arrival Everyday</h1>
+            <p class="p-5">Discover something fresh and exciting every single day! Whether it's the latest trends, unique products.</p>
+        </div>
+        <div class="bg-purple-300 w-80 rounded-2xl m-1 md:m-5">
+            <img class="p-2" width="60" height="60" src="https://img.icons8.com/ios-filled/60/delivery--v1.png" alt="delivery--v1"/>
+            <h1 class="font-bold pt-5 text-center">Fast & Free Shipping</h1>
+            <p class="p-5">Fast & Free Shipping is a delivery service that ensures your orders arrive quickly at your doorstep.</p>
+        </div>
+     </div>
+
+    <!-- New Arrivals -->
+     <div>
+        <h1 class="font-bold text-4xl p-5 mt-5">New Arrivals</h1>
+        <div class="flex p-5 justify-between">
+            
+                <img src="./Images/shirt img 1.jpg" alt="" style="width: 20%; margin: 10px;">
+                <img src="./Images/shirt img 2.jpg" alt="" style="width: 20%; margin: 10px;">
+                <img src="./Images/shirt img 3.jpg" alt="" style="width: 20%; margin: 10px;">
+                <img src="./Images/shirt img 4.jpg" alt="" style="width: 20%; margin: 10px;">
+
+        </div>
+     </div>
+
+    <!-- Most wanded -->
+     <div>
+        <h1 class="font-bold text-4xl p-5 mt-5">Most Wanted</h1>
+        <div class="mostwanded flex">
+
+            <div class="mostwanded1 relative">
+                <img class="item" src="./Images/shirt img 10.jpg" alt="">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40 right-14" onclick="like()" id="like" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+            <div class="mostwanded2 relative">
+                <img class="item" src="./Images/shirt img 9.jpg" alt="">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40 right-14" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+            <div class="mostwanded3 relative">
+                <img class="item" src="./Images/shirt img 8.jpg" alt="">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40 right-14" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+            <div class="mostwanded4 relative">
+                <img class="item" src="./Images/shirt img 7.jpg" alt="">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40 right-14" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+            <div class="mostwanded5 relative">
+                <img class="item" src="./Images/shirt img 6.jpg" alt="">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40  right-14" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+            <div class="mostwanded6 relative">
+                <img class="item" src="./Images/shirt img 5.jpg">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40 right-14" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+            <div class="mostwanded7 relative">
+                <img class="item" src="./Images/shirt img 4.jpg">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40 right-14" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+            <div class="mostwanted8 relative">
+                <img class="item" src="./Images/shirt img 3.jpg">
+                <button class="bg-red-600 p-1 absolute top-0">Sale</button>
+                <img class="absolute bottom-1 md:left-40 right-14" width="25" height="25" src="https://img.icons8.com/ios/20/like--v1.png" alt="like--v1"/>
+            </div>
+        </div>   
+     </div>
+
+    <!-- offer image -->
+     <div class="bg-purple-300 mt-5 flex relative" style="width: 98%; height: 50%; margin-left: 1%; margin-right: 1%;">
+        <img src="./Images/major img1.jpg" alt="" style="width: 50%; border-radius: 80px;">
+        <h1 class="font-bold text-center md:text-4xl md:mt-20 mt-5">Limited Offer 35% OFF on this for the first 30 Customers</h1>
+        <a href="collections.html"><button class="flex-none absolute bg-white font-bold rounded-3xl p-2 hover:bg-gray-700" style="top: 50%; right: 20%;">Shop Now</button></a>
+     </div>
+
+    <!-- News Letter -->
+    <section class="text-center">
+        <div>
+            <h2 class="font-bold text-3xl mt-8">Join our News Letter</h2>
+            <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+            <input type="text" placeholder="Type here..." class="border border-black p-2 m-3 rounded-3xl" style="width: 80%;">
+            <br>
+            <button class="bg-black text-white p-2 m-1 font-bold hover:bg-gray-700 rounded-xl">Subscribe</button>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <section class="bg-purple-300 p-10 flex flex-col gap-5 mt-5">
+        <h2 class="text-4xl font-bold">Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+        <div class="flex">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new"/>
+            <img width="30" height="30" src="https://img.icons8.com/material-outlined/30/twitterx--v2.png" alt="twitterx--v2"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/pinterest--v1.png" alt="pinterest--v1"/>
+            <img width="30" height="30" src="https://img.icons8.com/material-outlined/30/instagram-new--v1.png" alt="instagram-new--v1"/>
+        </div>
+        
+        <p>@2021 nostra.com</p>
+     </section>
+
+    
+     <script src="index.js"></script>
+     
+
+</body>
+    
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TAILWIND CSS CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class=" bg-purple-300 p-3 flex items-center justify-between top-0 z-40">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+        <img id="menuicon" class="md:hidden" width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/menu--v3.png" alt="menu--v3"/>
+
+        <ul class="flex gap-5 text-gray-700 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-purple-300 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+     </section>
+
+    <!-- search bar -->
+    <div class="search-bar">
+        <div class="search">
+          <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search.png" alt="search"/>
+          <input id="searchbox" placeholder="search">
+        </div>
+      </div>
+
+    <!-- Product secttion -->
+     <div class="container">
+        <div class="sidebar">
+            <h3>Occasion</h3>
+            <div class="categorylist">
+                <!-- <p>Summer</p>
+                <p>Party</p>
+                <p>Beach</p> -->
+            </div>
+
+            <h3>Colors</h3>
+            <div class="categorylist2">
+                <!-- <p>red</p>
+                <p>Blue</p>
+                <p>White</p>
+                <p>Green</p> -->
+            </div>
+
+            <h3>Arrivals</h3>
+            <div class="categorylist3">
+                <!-- <p>New</p>
+                <p>old</p> -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="products">
+                
+                
+            </div>
+        </div>
+     </div>
+
+
+     
+     <!-- News Letter -->
+    <section class="text-center">
+        <div>
+            <h2 class="font-bold text-3xl mt-8">Join our News Letter</h2>
+            <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+            <input type="text" placeholder="Type here..." class="border border-black p-2 m-3 rounded-3xl" style="width: 80%;">
+            <br>
+            <button class="bg-black text-white p-2 m-1 font-bold hover:bg-gray-700 rounded-xl">Subscribe</button>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <section class="bg-purple-300 p-10 flex flex-col gap-5 mt-5" style="width: 100%;">
+        <h2 class="text-4xl font-bold">Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+            <div class="flex">
+                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new"/>
+                <img width="30" height="30" src="https://img.icons8.com/material-outlined/30/twitterx--v2.png" alt="twitterx--v2"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/pinterest--v1.png" alt="pinterest--v1"/>
+                <img width="30" height="30" src="https://img.icons8.com/material-outlined/30/instagram-new--v1.png" alt="instagram-new--v1"/>
+            </div>
+
+        <p>@2021 nostra.com</p>
+     </section>
+   
+    
+    <script src="collection.js"></script>
+</body>
+</html>
