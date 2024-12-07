@@ -108,8 +108,9 @@
     padding: 10px;
     gap: 20px;
 }
+
 .product{
-    width: 150px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
